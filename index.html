@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOMI para propietarios | Alquila con los inquilinos ideales</title>
+<meta name="description" content="Publica tu vivienda o habitación en HOMI y conecta con Homies verificados y afines a lo que buscas. Ventajas de cuenta profesional, gratis por ahora.">
+<meta property="og:title" content="HOMI para propietarios">
+<meta property="og:description" content="Publica tu vivienda o habitación en HOMI y conecta con inquilinos verificados y afines a lo que buscas.">
+<meta property="og:image" content="https://www.homi-app.com/homi_logo_cut.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAaVElEQVR42u3deZRdVZ0v8O9v733uVJVUBhJCiMzQGloBIxiSSiq0tm3bw9PWW93r2U+aQWhAWIYZpLm50GEKggEaUJFeNspz1bUHh9ft0L7kkpAwpXmAVEuYIURISM11p3PO/r0/blVSokyaVN2q+/24sliSrCL33LO/57fHAxAREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREREdHbEV6C5qBv+K4FUF4VYgBMpUaukEJn1mQX7qh/r0fPVTy5UM1Vea/661+8z+UMju4WPDny57vnKhYWVPLwvJoMAJoMT/Vs1mDhDsGqYizy5k/1ry5aFJzxp61JAPiPnlfCT9z6TPWtbgrflbUAgGzBv9XPJQYATUSjzwLSWYjH/t7Pzz5+XipjD58XJBfWfHREWyo4shpqS6x+ZsLamQknbQAQRTpciX2PCHpTgR0aroQvi7VPlmrxM4GXp2bftOHlX/lvjlYKnQXPrgMDgCaovEcha8Y2+n89+ZgZS+e2LElZ99Gkk6Ui8nuBM21I2t1pAQDwuucXABip/xLZcweIAGGMqBZXVHVrKHigEvr/u2Mw3vC+f9i0fU8YdDig6NlNYADQeD3xu/Y0/DMWIbj6pPaPtKZNp4P5o0TSzYczQOyByANeFYoxlYEKBIBipMXX/6WHwtR//NgnuoERA2cAZwCviMq1/qpifS3Wrv/zUuWH/+vbDw0AgHZl7aonC5pnEDAAaB81/q6sHW34W89tn7N/m/3rtJHTg4RbCCdAzQNR7AHxEBWoGMjv/J0qVHX3zzTGImEBBcJK9FLV6709/bW7Dr5107O7K4J8MWbXgAFAe6vh52CwCioC3fA/3z/z/QfPPDeTtGcFyWAeYg/UIu/rT29jZB9/hwoFtP6Ud9YiYRCXo+FK7L+5c7Cy5tC1D74AAJrNWin86pgEMQDoXTf+Dif5YgQAvZcsO70l6f4uyLiDUIuByMcABCJmIv5uXqEGiGHEIWURVuO+Shjf9M8bXlhzSvHFytiKhRgA9G4a/phBvqe/ePzRB05r+Uo6E3wUkQdCHwGwkIb5vurjDFYckg5hOXyivxSunLNm489UVbBKhIOEDAB6p61pTPm8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14HWqKo+/c3iixXN5Yw02StKmq8LsKrDAkAl1H+BMwK+mLKJicKIlMO4UP//65uuPTRdv2f0rTtPnNU+4737uSeDhJ2HWqwwwgHRproRNEbC2loleu57T+08JtvVPQwZPamdFcBUTjxFNms+cMfG3oFyeA6sCKwolF2BZuFVPawIIChH/qzOQvcQCtmmK/+bswsAQAqFWLuydr8b7//XnTvLK5FwFs4YeEScHZjS5Z/CIzKBNbDGDAxWT5lx3YafaDZrpbMQN2VbaOr7oav+xfdd3P5XmZbgK0Ey2B+1CIh9DBX1UB5mPSWecqKAGjhjkHAIK+ErQ8PVs2et2fT90XugaUdBmv6hkM1aKRTiR8885sAj5864KGnNX7rAzoM1gLIYmBp3uQCxRxTG2yuxv+fZnb03HXvn4zuavfEzAN5QCQDAi5e2z5xp3PIQ/kMznDk6VuWbbCYxKxIPRPqEGjzcP4iNh64t9o0Nfl4hqoeAQrQry8beBGE/1V69zgpgLwcBClmDJ3cIjp7LPsBUMPpdZgtehIO8RERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERET0Dv1/X8MhLuMNAi8AAAAASUVORK5CYII=" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================================
+   HOMI — Landing de propietarios
+   Tokens — colores reales de homi-app.com (confirmados por el equipo)
+   ========================================================================== */
+:root {
+  /* Color — de la web real de HOMI */
+  --principal: #FF7F40;        /* naranja — color principal */
+  --secundario: #FEF3ED;       /* melocotón claro — color secundario */
+  --fondo: #FAFAFA;            /* fondo general */
+  --oscuro: #1A1A1A;           /* fondo oscuro de las tarjetas de beneficios — estimado de la captura, confirmar hex exacto si lo tenéis */
+  --blanco: #FFFFFF;
+
+  --ink: #1A1A1A;              /* texto principal (mismo tono que --oscuro) */
+  --ink-soft: #6B6660;         /* texto secundario */
+  --linea: #ECE5DF;            /* bordes / divisores sobre fondo claro */
+  --linea-oscura: rgba(255,255,255,0.14); /* divisores sobre fondo oscuro */
+
+  --shadow-soft: 0 24px 48px -24px rgba(26, 26, 26, 0.28);
+  --shadow-card: 0 12px 28px -16px rgba(26, 26, 26, 0.16);
+
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+
+  --font-display: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --container: 1160px;
+}
+
+/* ==========================================================================
+   Reset & base
+   ========================================================================== */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--fondo);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+h1, h2, h3 { font-family: var(--font-display); font-weight: 800; line-height: 1.14; margin: 0 0 0.5em; color: var(--ink); letter-spacing: -0.01em; }
+h1 { font-size: clamp(2.3rem, 4.2vw, 3.4rem); }
+h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); }
+h3 { font-size: 1.15rem; font-weight: 800; }
+p { margin: 0 0 1em; color: var(--ink-soft); }
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+ul { list-style: none; margin: 0; padding: 0; }
+
+.container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
+
+.skip-link {
+  position: absolute; left: -999px; top: 0; background: var(--principal); color: #fff;
+  padding: 12px 18px; border-radius: 0 0 8px 0; z-index: 1000;
+}
+.skip-link:focus { left: 0; }
+
+:focus-visible { outline: 3px solid var(--principal); outline-offset: 3px; border-radius: 4px; }
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font-family: var(--font-body); font-weight: 800; font-size: 0.95rem;
+  padding: 12px 22px; border-radius: 999px; border: 1.5px solid transparent;
+  text-decoration: none; cursor: pointer; transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease, background 0.18s ease, color 0.18s ease;
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: var(--principal); color: var(--blanco); box-shadow: 0 10px 20px -8px rgba(255, 127, 64, 0.55); }
+.btn-primary:hover { filter: brightness(0.93); }
+.btn-outline { background: transparent; color: var(--principal); border-color: var(--principal); }
+.btn-outline:hover { background: var(--principal); color: var(--blanco); }
+.btn-ghost { background: transparent; color: var(--ink); border-color: var(--linea); }
+.btn-ghost:hover { border-color: var(--ink); }
+.btn-lg { padding: 15px 28px; font-size: 1rem; }
+.btn-block { width: 100%; }
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.site-header {
+  position: sticky; top: 0; z-index: 500;
+  background: rgba(250, 250, 250, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--linea);
+}
+.header-inner { display: flex; align-items: center; gap: 24px; padding: 14px 24px; }
+.logo { display: flex; align-items: center; }
+.logo img { height: 30px; width: auto; }
+.logo-fallback { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--principal); }
+.logo-fallback--footer { color: var(--ink); font-size: 1.6rem; }
+
+.main-nav { display: flex; align-items: center; gap: 28px; margin-left: 16px; flex: 1; }
+.main-nav > a { font-weight: 700; font-size: 0.95rem; text-decoration: none; color: var(--ink-soft); transition: color 0.15s ease; }
+.main-nav > a:hover { color: var(--principal); }
+.nav-actions-mobile { display: none; }
+
+.header-actions { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+
+.nav-toggle {
+  display: none; flex-direction: column; justify-content: center; gap: 5px;
+  width: 40px; height: 40px; background: none; border: none; cursor: pointer; margin-left: auto;
+}
+.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: transform 0.25s ease, opacity 0.25s ease; }
+
+/* ==========================================================================
+   Sections (generic)
+   ========================================================================== */
+.section { padding: 96px 0; }
+.section--alt { background: var(--secundario); }
+.section--dark { background: var(--oscuro); color: var(--blanco); }
+.section--dark h2 { color: var(--blanco); }
+.section--dark p { color: rgba(255,255,255,0.75); }
+
+.eyebrow {
+  display: inline-block; font-weight: 800; font-size: 0.78rem; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--principal); margin-bottom: 14px;
+}
+.eyebrow--center { display: block; text-align: center; }
+.eyebrow--light { color: var(--principal); }
+
+.section > .container > h2 { text-align: center; max-width: 640px; margin-left: auto; margin-right: auto; }
+.section-lead { text-align: center; max-width: 560px; margin: 0 auto 52px; font-size: 1.05rem; }
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+.hero { padding: 64px 0 100px; overflow: hidden; }
+.hero-inner { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
+.hero h1 { margin-bottom: 0.45em; }
+.hero h1 span { color: var(--principal); }
+.hero .lead { font-size: 1.15rem; max-width: 46ch; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; margin: 30px 0 34px; }
+.hero-trust { display: flex; flex-wrap: wrap; gap: 22px; }
+.hero-trust li { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 0.88rem; color: var(--ink-soft); }
+.hero-trust img { opacity: 0.85; }
+
+.hero-visual { position: relative; height: 420px; }
+.match-card {
+  position: absolute; border-radius: var(--radius-lg);
+}
+.match-card--back {
+  inset: 26px 8px 0 40px; background: linear-gradient(135deg, var(--principal), var(--secundario));
+  opacity: 0.55; transform: rotate(4deg);
+}
+.match-card--front {
+  inset: 0 20px 26px 0; background: var(--blanco); box-shadow: var(--shadow-soft);
+  padding: 26px; display: flex; flex-direction: column; gap: 18px;
+  transform: rotate(-2deg);
+}
+.match-card-top { display: flex; align-items: center; gap: 12px; }
+.avatar { flex-shrink: 0; border-radius: 50%; overflow: hidden; }
+.avatar-bg { fill: var(--oscuro); }
+.avatar-fg { fill: var(--blanco); }
+.match-name { display: flex; flex-direction: column; line-height: 1.3; }
+.match-name strong { font-family: var(--font-display); font-size: 1.05rem; }
+.match-name span { font-size: 0.82rem; color: var(--ink-soft); }
+.verified-pill {
+  margin-left: auto; display: flex; align-items: center; gap: 5px;
+  background: rgba(255, 127, 64, 0.12); color: var(--principal); font-size: 0.72rem; font-weight: 800;
+  padding: 5px 10px; border-radius: 999px; white-space: nowrap;
+}
+.verified-pill img { width: 12px; height: 12px; }
+
+.match-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.match-tags span {
+  background: var(--secundario); color: var(--ink); font-size: 0.78rem; font-weight: 700;
+  padding: 6px 12px; border-radius: 999px;
+}
+
+.match-gauge-row { display: flex; align-items: center; gap: 16px; margin-top: auto; padding-top: 12px; border-top: 1px dashed var(--linea); }
+.match-gauge-row p { margin: 0; font-size: 0.85rem; color: var(--ink-soft); }
+.match-gauge-row strong { color: var(--ink); }
+
+.gauge-track { stroke: var(--linea); }
+.gauge-fill { stroke: var(--principal); stroke-dasharray: 326.7; stroke-dashoffset: 326.7; transition: stroke-dashoffset 1.5s cubic-bezier(.16,1,.3,1); }
+.js-ready .hero-visual.is-visible .gauge-fill { stroke-dashoffset: 19.6; }
+.gauge-num { font-family: var(--font-display); font-size: 1.4rem; fill: var(--ink); font-weight: 800; }
+.gauge-label { font-family: var(--font-body); font-size: 0.6rem; fill: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* ==========================================================================
+   Steps ("Cómo funciona")
+   ========================================================================== */
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; counter-reset: step; }
+.steps li { background: var(--blanco); border: 1px solid var(--linea); border-radius: var(--radius-md); padding: 28px 24px; }
+.step-num { font-family: var(--font-display); font-size: 1.6rem; font-weight: 800; color: var(--principal); opacity: 0.6; display: block; margin-bottom: 14px; }
+.steps h3 { margin-bottom: 8px; }
+.steps p { margin: 0; font-size: 0.92rem; }
+
+/* ==========================================================================
+   Category cards
+   ========================================================================== */
+.cards-grid { display: grid; gap: 26px; }
+.cards-grid--3 { grid-template-columns: repeat(3, 1fr); }
+
+.cat-card {
+  background: var(--blanco); border-radius: var(--radius-md); padding: 32px 28px;
+  border: 1px solid var(--linea); transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cat-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-card); }
+.cat-icon { color: var(--principal); width: 48px; height: 48px; margin-bottom: 18px; }
+.cat-icon svg { width: 100%; height: 100%; }
+.cat-icon .spark { fill: var(--principal); }
+.cat-card p { font-size: 0.93rem; }
+.card-link { font-weight: 800; color: var(--principal); text-decoration: none; font-size: 0.9rem; }
+.card-link:hover { text-decoration: underline; }
+
+/* ==========================================================================
+   Historia / La app (sección oscura)
+   ========================================================================== */
+.historia-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+.milestones { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.milestones li {
+  background: rgba(255,255,255,0.08); border: 1px solid var(--linea-oscura);
+  padding: 8px 14px; border-radius: 999px; font-size: 0.82rem; font-weight: 700;
+}
+
+/* ==========================================================================
+   Dev notes (avisos internos / pendientes — quitar antes de publicar)
+   ========================================================================== */
+.dev-note {
+  font-size: 0.82rem; font-style: italic; color: #8A5A00; background: #FFF6E0;
+  border: 1px dashed #E3B24A; border-radius: 10px; padding: 10px 14px; margin-top: 16px;
+}
+.dev-note--center { max-width: 640px; margin-left: auto; margin-right: auto; text-align: center; }
+.section--dark .dev-note { background: rgba(255, 246, 224, 0.12); color: #FFD98A; border-color: rgba(227,178,74,0.5); }
+
+/* ==========================================================================
+   Beneficios para propietarios (antes "Planes" — ahora gratis mientras
+   colaboran con nosotros). Refleja el bloque real de homi-app.com/enterprise-signup.
+   ========================================================================== */
+.benefits-panel {
+  background: var(--oscuro); color: var(--blanco); border-radius: var(--radius-lg);
+  padding: 44px 40px; box-shadow: var(--shadow-soft);
+}
+.benefits-panel-head h3 { color: var(--blanco); font-size: 1.4rem; margin-bottom: 6px; }
+.benefits-panel-head p { color: rgba(255,255,255,0.65); margin-bottom: 0; }
+
+.benefits-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 30px 48px;
+  margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--linea-oscura);
+}
+.benefit-item { display: flex; gap: 16px; align-items: flex-start; }
+.benefit-item img { width: 26px; height: 26px; flex-shrink: 0; margin-top: 2px; filter: brightness(0) invert(1); }
+.benefit-item h4 { font-family: var(--font-display); font-size: 1rem; font-weight: 800; color: var(--blanco); margin: 0 0 4px; }
+.benefit-item p { font-size: 0.9rem; color: rgba(255,255,255,0.68); margin: 0; }
+
+.benefits-panel-foot {
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--linea-oscura); flex-wrap: wrap;
+}
+.free-badge {
+  display: inline-flex; align-items: center; gap: 8px; background: rgba(255,127,64,0.16);
+  color: var(--principal); border: 1px solid rgba(255,127,64,0.4); font-weight: 800; font-size: 0.85rem;
+  padding: 9px 16px; border-radius: 999px;
+}
+
+/* ==========================================================================
+   Mini FAQ
+   ========================================================================== */
+.mini-faq { max-width: 720px; margin: 56px auto 0; }
+.mini-faq h3 { text-align: center; margin-bottom: 20px; }
+.mini-faq details {
+  border-bottom: 1px solid var(--linea); padding: 16px 4px;
+}
+.mini-faq summary {
+  cursor: pointer; font-weight: 700; list-style: none; display: flex; justify-content: space-between; align-items: center;
+}
+.mini-faq summary::after { content: '+'; font-size: 1.3rem; color: var(--principal); transition: transform 0.2s ease; }
+.mini-faq details[open] summary::after { transform: rotate(45deg); }
+.mini-faq summary::-webkit-details-marker { display: none; }
+.mini-faq p { margin: 12px 0 0; font-size: 0.92rem; }
+
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+.contact-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 60px; align-items: start; }
+.contact-list { margin: 22px 0; display: flex; flex-direction: column; gap: 14px; }
+.contact-list li { display: flex; flex-direction: column; }
+.contact-label { font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--principal); }
+.contact-list a { font-size: 1.05rem; font-weight: 700; text-decoration: none; }
+.contact-list a:hover { text-decoration: underline; }
+.social-row { display: flex; gap: 12px; margin-top: 8px; }
+.social-row a {
+  width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--linea);
+  display: flex; align-items: center; justify-content: center; color: var(--ink); transition: background 0.2s ease, color 0.2s ease;
+}
+.social-row a:hover { background: var(--principal); color: var(--blanco); border-color: var(--principal); }
+
+/* Botones de redes sociales del FOOTER: fondo = --fondo, hover = --secundario, icono = --principal */
+.site-footer .social-row a {
+  background: var(--fondo); border: none; color: var(--principal);
+}
+.site-footer .social-row a:hover {
+  background: var(--secundario); color: var(--principal);
+}
+
+.contact-form {
+  background: var(--blanco); border: 1px solid var(--linea); border-radius: var(--radius-lg);
+  padding: 36px; box-shadow: var(--shadow-card);
+}
+.form-row { margin-bottom: 18px; display: flex; flex-direction: column; gap: 6px; }
+.form-row--split { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 0;}
+.form-row--split > div { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
+label { font-size: 0.85rem; font-weight: 700; color: var(--ink); }
+input, select, textarea {
+  font-family: var(--font-body); font-size: 0.95rem; padding: 11px 14px;
+  border: 1.5px solid var(--linea); border-radius: 10px; background: var(--fondo); color: var(--ink);
+  transition: border-color 0.15s ease;
+}
+input:focus, select:focus, textarea:focus { border-color: var(--principal); outline: none; }
+textarea { resize: vertical; min-height: 90px; font-family: var(--font-body); }
+.checkbox-row { display: flex; align-items: flex-start; gap: 10px; font-size: 0.85rem; font-weight: 500; color: var(--ink-soft); margin-bottom: 22px; }
+.checkbox-row input { width: 17px; height: 17px; margin-top: 2px; accent-color: var(--principal); flex-shrink: 0; }
+.checkbox-row a { color: var(--principal); font-weight: 700; }
+.form-status { text-align: center; font-weight: 700; font-size: 0.88rem; min-height: 1.4em; margin: 12px 0 0; color: var(--principal); }
+
+/* ==========================================================================
+   WhatsApp float (verde de WhatsApp — no es un color de marca de HOMI)
+   ========================================================================== */
+.whatsapp-float {
+  position: fixed; right: 22px; bottom: max(22px, env(safe-area-inset-bottom));
+  width: 58px; height: 58px; border-radius: 50%; background: #25D366;
+  display: flex; align-items: center; justify-content: center; z-index: 600;
+  box-shadow: 0 14px 30px -10px rgba(37, 211, 102, 0.65);
+  animation: wa-pulse 2.6s ease-in-out infinite;
+}
+.whatsapp-float:hover { animation-play-state: paused; transform: scale(1.06); }
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 14px 30px -10px rgba(37, 211, 102, 0.65); }
+  50% { box-shadow: 0 14px 30px -10px rgba(37, 211, 102, 0.95), 0 0 0 10px rgba(37, 211, 102, 0.12); }
+}
+.whatsapp-tooltip {
+  position: absolute; right: 68px; background: var(--oscuro); color: var(--blanco); font-size: 0.8rem; font-weight: 700;
+  padding: 8px 12px; border-radius: 8px; white-space: nowrap; opacity: 0; pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease; transform: translateX(6px);
+}
+.whatsapp-float:hover .whatsapp-tooltip, .whatsapp-float:focus-visible .whatsapp-tooltip { opacity: 1; transform: translateX(0); }
+
+/* ==========================================================================
+   Footer — fondo = color principal (naranja), texto oscuro para contraste
+   ========================================================================== */
+.site-footer { background: var(--principal); color: rgba(26,26,26,0.75); padding: 64px 0 0; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 48px; border-bottom: 1px solid rgba(26,26,26,0.15); }
+.footer-brand p { color: rgba(26,26,26,0.72); font-size: 0.88rem; margin: 14px 0 16px; }
+.footer-brand img { margin-bottom: 4px; }
+.footer-col h4 { font-family: var(--font-body); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: rgba(26,26,26,0.55); margin-bottom: 16px; }
+.footer-col { display: flex; flex-direction: column; gap: 11px; }
+.footer-col a { color: var(--ink); text-decoration: none; font-size: 0.92rem; font-weight: 600; }
+.footer-col a:hover { color: var(--blanco); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; padding: 22px 24px; font-size: 0.82rem; color: rgba(26,26,26,0.65); flex-wrap: wrap; gap: 10px; }
+.footer-bottom a { color: rgba(26,26,26,0.85); text-decoration: none; font-weight: 800; }
+.footer-bottom a:hover { color: var(--blanco); }
+
+/* ==========================================================================
+   Scroll reveal (progressive enhancement — solo activo si hay JS)
+   ========================================================================== */
+.js-ready [data-reveal] { opacity: 0; transform: translateY(22px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.js-ready [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 980px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-visual { height: 380px; max-width: 440px; margin: 0 auto; width: 100%; }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .cards-grid--3 { grid-template-columns: repeat(2, 1fr); }
+  .historia-grid { grid-template-columns: 1fr; gap: 48px; }
+  .benefits-grid { grid-template-columns: 1fr; gap: 24px; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 760px) {
+  .main-nav {
+    position: fixed; inset: 66px 0 0 0; background: var(--fondo); flex-direction: column;
+    align-items: flex-start; padding: 28px 24px; gap: 20px; transform: translateX(100%);
+    transition: transform 0.3s ease; overflow-y: auto;
+  }
+  .main-nav.is-open { transform: translateX(0); }
+  .main-nav > a { font-size: 1.1rem; }
+  .nav-actions-mobile { display: flex; flex-direction: column; gap: 12px; width: 100%; margin-top: 12px; }
+  .nav-actions-mobile .btn { width: 100%; }
+  .header-actions { display: none; }
+  .nav-toggle { display: flex; }
+  .nav-toggle.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle.is-open span:nth-child(2) { opacity: 0; }
+  .nav-toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .section { padding: 68px 0; }
+  .steps { grid-template-columns: 1fr; }
+  .cards-grid--3 { grid-template-columns: 1fr; }
+  .benefits-panel { padding: 32px 24px; }
+  .benefits-panel-foot { flex-direction: column; align-items: stretch; }
+  .benefits-panel-foot .btn { width: 100%; }
+  .form-row--split { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-bottom { justify-content: center; text-align: center; }
+  .whatsapp-float { right: 16px; width: 54px; height: 54px; }
+  .whatsapp-tooltip { display: none; }
+}
+
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .hero-ctas { flex-direction: column; align-items: stretch; }
+  .hero-ctas .btn { width: 100%; }
+}
+
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="https://www.homi-app.com/" class="logo" aria-label="HOMI — ir a la página principal">
+      <img src="data:image/png;base64,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" alt="HOMI" width="110" height="32">
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#historia">Nuestra historia</a>
+      <a href="#beneficios">Ventajas</a>
+      <a href="#contacto">Contacto</a>
+      <div class="nav-actions-mobile">
+        <a href="https://www.homi-app.com/login" class="btn btn-ghost">Iniciar sesión</a>
+        <a href="https://www.homi-app.com/enterprise-signup" class="btn btn-primary">Publicar anuncio</a>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a href="https://www.homi-app.com/login" class="btn btn-ghost">Iniciar sesión</a>
+      <a href="https://www.homi-app.com/enterprise-signup" class="btn btn-primary">Publicar anuncio</a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow">HOMI para propietarios</p>
+        <h1>Encuentra al inquilino ideal.<br><span>No solo a cualquiera.</span></h1>
+        <p class="lead">De media, encontrar un inquilino de confianza en España lleva hasta 3 meses. HOMI filtra por compatibilidad de estilo de vida antes de poneros en contacto, así que solo hablas con Homies verificados y afines a tu vivienda.</p>
+        <div class="hero-ctas">
+          <a href="https://www.homi-app.com/enterprise-signup" class="btn btn-primary btn-lg">Publica tu anuncio gratis</a>
+          <a href="#beneficios" class="btn btn-outline btn-lg">Ver ventajas para propietarios</a>
+        </div>
+        <ul class="hero-trust">
+          <li><img src="https://www.homi-app.com/verified.svg" alt="" width="18" height="18">Anuncios verificados</li>
+          <li><img src="https://www.homi-app.com/edit3.svg" alt="" width="18" height="18">Sin permanencia</li>
+          <li><img src="https://www.homi-app.com/profile.svg" alt="" width="18" height="18">Soporte 24/7</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" data-reveal aria-hidden="true">
+        <div class="match-card match-card--back"></div>
+        <div class="match-card match-card--front" id="matchCard">
+          <div class="match-card-top">
+            <div class="avatar">
+              <svg viewBox="0 0 48 48" width="44" height="44"><circle cx="24" cy="24" r="24" class="avatar-bg"/><circle cx="24" cy="19" r="8" class="avatar-fg"/><path d="M8 42c0-9 7-14 16-14s16 5 16 14" class="avatar-fg"/></svg>
+            </div>
+            <div class="match-name">
+              <strong>Marta, 24</strong>
+              <span>Estudiante · Madrid</span>
+            </div>
+            <span class="verified-pill">
+              <img src="https://www.homi-app.com/verified.svg" alt="">
+              Verificada
+            </span>
+          </div>
+
+          <div class="match-tags">
+            <span>No fumadora</span>
+            <span>Madrugadora</span>
+            <span>Le gusta cocinar</span>
+          </div>
+
+          <div class="match-gauge-row">
+            <svg class="gauge" viewBox="0 0 120 120" width="88" height="88">
+              <circle class="gauge-track" cx="60" cy="60" r="52" fill="none" stroke-width="10"/>
+              <circle class="gauge-fill" cx="60" cy="60" r="52" fill="none" stroke-width="10" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+              <text x="60" y="57" text-anchor="middle" class="gauge-num">94%</text>
+              <text x="60" y="74" text-anchor="middle" class="gauge-label">afinidad</text>
+            </svg>
+            <p>Coincide con tu anuncio en <strong>Chamberí, Madrid</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMO FUNCIONA ============ -->
+  <section class="section" id="como-funciona">
+    <div class="container">
+      <p class="eyebrow eyebrow--center">Para propietarios</p>
+      <h2>Publicar tu vivienda, paso a paso</h2>
+      <p class="section-lead">Así es alquilar con HOMI visto desde tu lado, el del propietario.</p>
+
+      <ol class="steps" data-reveal>
+        <li>
+          <span class="step-num">01</span>
+          <h3>Publica en minutos</h3>
+          <p>Sube fotos, precio y condiciones de tu habitación o vivienda. Publicar tu anuncio siempre es gratis.</p>
+        </li>
+        <li>
+          <span class="step-num">02</span>
+          <h3>Cuéntanos qué buscas</h3>
+          <p>Indica qué tipo de inquilino encaja contigo: hábitos, horarios, si fuma, si tiene mascota...</p>
+        </li>
+        <li>
+          <span class="step-num">03</span>
+          <h3>Recibe Homies compatibles</h3>
+          <p>Solo te contactan perfiles ya verificados por nuestro equipo y afines a lo que has pedido.</p>
+        </li>
+        <li>
+          <span class="step-num">04</span>
+          <h3>Decide y alquila</h3>
+          <p>Habla, elige y cierra el alquiler directamente. Sin permanencia ni letra pequeña.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORIAS ============ -->
+  <section class="section section--alt" id="categorias">
+    <div class="container">
+      <p class="eyebrow eyebrow--center">Cómo se organiza HOMI</p>
+      <h2>Tres formas de anunciar y buscar</h2>
+      <p class="section-lead">Todo lo que hay dentro de HOMI se agrupa en tres categorías. Así es cada una:</p>
+
+      <div class="cards-grid cards-grid--3" data-reveal>
+        <article class="cat-card">
+          <div class="cat-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="19" r="9" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 40c0-6.5 5.4-11 12-11s12 4.5 12 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="31" cy="19" r="9" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+              <path d="M19 40c0-6.5 5.4-11 12-11s12 4.5 12 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+              <path d="M25 8l1.3 2.9L29 12l-2.7 1.3L25 16l-1.3-2.7L21 12l2.7-1.1L25 8z" class="spark"/>
+            </svg>
+          </div>
+          <h3>Homies</h3>
+          <p>Son los perfiles de quienes buscan compañero o compañera de piso. Cada Homi completa un test de estilo de vida —hábitos, horarios, valores— que usamos para recomendarle pisos y compañeros afines. Cuando publicas un anuncio, son los Homies quienes lo descubren y te escriben.</p>
+          <a href="https://www.homi-app.com/homies" class="card-link">Ver perfiles de Homies →</a>
+        </article>
+
+        <article class="cat-card">
+          <div class="cat-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="25" width="36" height="13" rx="3" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 31.5h36" stroke="currentColor" stroke-width="2"/>
+              <rect x="9.5" y="19" width="10" height="7.5" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 38v3.5M40 38v3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Habitación</h3>
+          <p>La categoría para anunciar una plaza individual dentro de un piso compartido. Ideal si tienes una habitación libre en tu vivienda —porque vives allí o porque gestionas varias plazas dentro del mismo piso.</p>
+          <a href="https://www.homi-app.com/habitacion" class="card-link">Ver anuncios de habitaciones →</a>
+        </article>
+
+        <article class="cat-card">
+          <div class="cat-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 22L24 8l17 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M11 19v19.5a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2V19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="20" y="28.5" width="8" height="12" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Vivienda entera</h3>
+          <p>Para propietarios o inmobiliarias que alquilan el piso completo, normalmente a un grupo de Homies que ya se conocen o a los que HOMI ayuda a emparejar entre sí antes de mudarse juntos.</p>
+          <a href="https://www.homi-app.com/vivienda-entera" class="card-link">Ver viviendas completas →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LA APP + HISTORIA ============ -->
+  <section class="section section--dark" id="historia">
+    <div class="container historia-grid">
+      <div data-reveal>
+        <p class="eyebrow eyebrow--light">La app</p>
+        <h2>¿Qué hace diferente a HOMI?</h2>
+        <p>Los portales tradicionales conectan anuncios con visitas. HOMI conecta personas. Antes de poneros en contacto, cada Homi completa un test de estilo de vida —hábitos, horarios, valores— y usamos esas respuestas para recomendar solo los perfiles afines a tu vivienda.</p>
+        <p>Además, nuestro equipo verifica manualmente anuncios y perfiles, y puedes consultar las valoraciones de otros usuarios antes de decidir con quién compartir tu piso.</p>
+      </div>
+
+      <div data-reveal>
+        <p class="eyebrow eyebrow--light">Nuestra historia</p>
+        <h2>Nacimos en Cuenca</h2>
+        <p>HOMI empezó de la mano de cuatro estudiantes de Marketing y Publicidad del IES Alfonso VIII de Cuenca —entre ellos Alin Cosmin Enciu, José García Almarza y Daniel Guzmán García— que vivieron en primera persona lo difícil que es encontrar piso y, sobre todo, encontrar con quién compartirlo.</p>
+        <p>La idea despegó al ganar un concurso de emprendimiento joven organizado por CaixaBank (programa Dualiza, con FPEmpresa). Desde entonces, el equipo ha seguido construyendo HOMI hasta convertirlo en un portal activo en toda España, tanto para particulares como para inmobiliarias.</p>
+        <ul class="milestones">
+          <li>Nace en Cuenca</li>
+          <li>Gana el concurso CaixaBank Dualiza</li>
+          <li>Hoy: presencia en toda España</li>
+        </ul>
+        <p class="dev-note">⚠️ Nota interna: confirmar el nombre del cuarto cofundador y los años exactos (idea, lanzamiento) antes de publicar esta sección.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENEFICIOS ============ -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <p class="eyebrow eyebrow--center">Para quienes colaboran con nosotros</p>
+      <h2>Ventajas para propietarios</h2>
+      <p class="section-lead">Estamos construyendo HOMI junto a los primeros propietarios que confían en nosotros. Por eso, ahora mismo, todo esto es completamente gratis.</p>
+
+      <div class="benefits-panel" data-reveal>
+        <div class="benefits-panel-head">
+          <h3>Beneficios de cuenta profesional</h3>
+          <p>Estamos trabajando para añadir más mejoras.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <img src="https://www.homi-app.com/verified.svg" alt="">
+            <div>
+              <h4>Verificación profesional</h4>
+              <p>Tu perfil aparecerá con un distintivo visible que te destaca como profesional verificado en anuncios y búsquedas.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <img src="https://www.homi-app.com/profile.svg" alt="">
+            <div>
+              <h4>Soporte premium 24/7</h4>
+              <p>Estamos contigo en todo momento, cuando lo necesites.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <img src="https://www.homi-app.com/edit3.svg" alt="">
+            <div>
+              <h4>Sin compromiso: cambia o cancela en cualquier momento</h4>
+              <p>Ajusta tu cuenta o cancela sin restricciones.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <img src="https://www.homi-app.com/phone.svg" alt="">
+            <div>
+              <h4>Solicitudes ilimitadas</h4>
+              <p>Contacta con todos los usuarios sin límite y recibe solicitudes ilimitadas, incluso de usuarios no premium.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefits-panel-foot">
+          <span class="free-badge">✓ Gratis por ahora</span>
+          <a href="https://www.homi-app.com/enterprise-signup" class="btn btn-primary btn-lg">Únete como profesional</a>
+        </div>
+      </div>
+
+      <!-- Mini FAQ -->
+      <div class="mini-faq" data-reveal>
+        <h3>Preguntas de propietarios</h3>
+        <details>
+          <summary>¿Tiene coste publicar mi anuncio?</summary>
+          <p>No. Ahora mismo publicar anuncios y acceder a todas las ventajas de cuenta profesional es completamente gratis para los propietarios que colaboran con HOMI.</p>
+        </details>
+        <details>
+          <summary>¿Cómo verifica HOMI a los Homies?</summary>
+          <p>Nuestro equipo revisa manualmente los perfiles y anuncios antes de publicarlos, y puedes consultar las valoraciones de otros usuarios antes de decidir.</p>
+        </details>
+        <details>
+          <summary>¿Puedo cancelar cuando quiera?</summary>
+          <p>Sí. No hay permanencia: ajusta o cancela tu cuenta profesional cuando quieras desde tu perfil.</p>
+        </details>
+        <details>
+          <summary>¿HOMI gestiona el contrato o el pago del alquiler?</summary>
+          <p>No. HOMI te ayuda a encontrar y verificar al inquilino ideal; el contrato y el pago del alquiler se gestionan directamente entre propietario e inquilino.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section section--alt" id="contacto">
+    <div class="container contact-grid">
+      <div class="contact-info" data-reveal>
+        <p class="eyebrow">Contacto</p>
+        <h2>¿Hablamos?</h2>
+        <p>Cuéntanos sobre tu vivienda y te ayudamos a dar el siguiente paso.</p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:info@homiapp.es">info@homiapp.es</a>
+          </li>
+          <li>
+            <span class="contact-label">WhatsApp</span>
+            <a href="https://wa.me/34642925583" target="_blank" rel="noopener">642 92 55 83</a>
+          </li>
+        </ul>
+
+        <div class="social-row">
+          <a href="https://www.instagram.com/homi_app/" target="_blank" rel="noopener" aria-label="HOMI en Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/app-homi/" target="_blank" rel="noopener" aria-label="HOMI en LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="8" y1="11" x2="8" y2="17"/><line x1="8" y1="7.5" x2="8" y2="7.6"/><path d="M12 17v-3.5c0-1.4 1-2.5 2.5-2.5s2.5 1.1 2.5 2.5V17"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@homi_app" target="_blank" rel="noopener" aria-label="HOMI en TikTok">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46"/><path d="M14 4c.4 2.2 2 3.6 4 3.9"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal novalidate>
+        <div class="form-row">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required autocomplete="name">
+        </div>
+        <div class="form-row form-row--split">
+          <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" autocomplete="tel">
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="tipo">Tipo de propiedad</label>
+          <select id="tipo" name="tipo">
+            <option value="Habitación">Habitación</option>
+            <option value="Vivienda entera">Vivienda entera</option>
+            <option value="Varias propiedades">Varias propiedades</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos un poco sobre tu vivienda..."></textarea>
+        </div>
+        <label class="checkbox-row">
+          <input type="checkbox" id="privacidad" name="privacidad" required>
+          <span>He leído y acepto la <a href="https://www.homi-app.com/privacy-policy" target="_blank" rel="noopener">política de privacidad</a>.</span>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg">Enviar mensaje</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        <p class="dev-note">⚠️ Este formulario abre el correo del visitante (mailto:) porque una página en GitHub Pages no tiene servidor propio. Si prefieres que se envíe sin salir de la página, puedo conectarlo a Formspree o EmailJS — solo necesito tu email o clave de API.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ WHATSAPP FLOTANTE ============ -->
+<a class="whatsapp-float" href="https://wa.me/34642925583?text=Hola%20HOMI%2C%20soy%20propietario%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n"
+   target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+    <path d="M16 4C9.4 4 4 9.4 4 16c0 2.2.6 4.3 1.7 6.1L4 28l6.1-1.6A11.9 11.9 0 0 0 16 28c6.6 0 12-5.4 12-12S22.6 4 16 4z" fill="#fff"/>
+    <path d="M11.5 10.8c.3-.6.6-.6.9-.6h.7c.2 0 .5 0 .7.5.3.6.9 2.1 1 2.3.1.2.1.4 0 .6-.1.2-.2.3-.4.5l-.5.6c-.2.2-.3.4-.1.7.2.3 1 1.6 2.1 2.6 1.4 1.3 2.6 1.7 3 1.9.3.1.5.1.7-.1l.7-.8c.2-.3.4-.2.7-.1l2 1c.2.1.4.2.5.3.1.2.1 1-.3 1.9-.3.9-1.9 1.7-2.6 1.7-.7 0-1.6 0-2.6-.4a12 12 0 0 1-4.5-2.9 13 13 0 0 1-2.9-4.2c-.4-.9-.6-1.9-.4-2.8.1-.7.5-1.4.9-1.7z" fill="#25D366"/>
+  </svg>
+  <span class="whatsapp-tooltip">¿Dudas? Escríbenos</span>
+</a>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="data:image/png;base64,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" alt="HOMI" width="72" height="129">
+      <p>Tu portal especializado en pisos compartidos.</p>
+      <div class="social-row">
+        <a href="https://www.instagram.com/homi_app/" target="_blank" rel="noopener" aria-label="HOMI en Instagram">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/app-homi/" target="_blank" rel="noopener" aria-label="HOMI en LinkedIn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="8" y1="11" x2="8" y2="17"/><line x1="8" y1="7.5" x2="8" y2="7.6"/><path d="M12 17v-3.5c0-1.4 1-2.5 2.5-2.5s2.5 1.1 2.5 2.5V17"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@homi_app" target="_blank" rel="noopener" aria-label="HOMI en TikTok">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46"/><path d="M14 4c.4 2.2 2 3.6 4 3.9"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <a href="https://www.homi-app.com/homies">Homies</a>
+      <a href="https://www.homi-app.com/habitacion">Habitación</a>
+      <a href="https://www.homi-app.com/vivienda-entera">Vivienda entera</a>
+      <a href="https://www.homi-app.com/publicar-anuncio">Publicar anuncio</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <a href="https://www.homi-app.com/enterprise-signup">Cómo funciona</a>
+      <a href="https://www.homi-app.com/faq">FAQs</a>
+      <a href="https://www.homi-app.com/blog">Blog</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="https://www.homi-app.com/privacy-policy">Privacidad</a>
+      <a href="https://www.homi-app.com/aviso-legal">Aviso legal</a>
+      <a href="https://www.homi-app.com/politica-de-cookies">Política de cookies</a>
+      <a href="https://www.homi-app.com/terminos-y-condiciones">Términos y condiciones</a>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© <span id="year">2026</span> HOMI · Todos los derechos reservados</p>
+    <a href="https://www.homi-app.com/">← Volver a homi-app.com</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  // Mark JS as available — CSS scroll-reveal rules only apply once this class exists,
+  // so the page stays fully visible for anyone without JS enabled.
+  document.documentElement.classList.add("js-ready");
+
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ------------------------------------------------------------------ */
+  /* Footer year                                                        */
+  /* ------------------------------------------------------------------ */
+  var yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ------------------------------------------------------------------ */
+  /* Mobile navigation                                                   */
+  /* ------------------------------------------------------------------ */
+  var navToggle = document.getElementById("navToggle");
+  var mainNav = document.getElementById("mainNav");
+
+  function closeNav() {
+    if (!mainNav || !navToggle) return;
+    mainNav.classList.remove("is-open");
+    navToggle.classList.remove("is-open");
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.setAttribute("aria-label", "Abrir menú");
+  }
+
+  if (navToggle && mainNav) {
+    navToggle.addEventListener("click", function () {
+      var isOpen = mainNav.classList.toggle("is-open");
+      navToggle.classList.toggle("is-open", isOpen);
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+      navToggle.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
+    });
+
+    mainNav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", closeNav);
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeNav();
+    });
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Scroll reveal                                                       */
+  /* ------------------------------------------------------------------ */
+  var revealEls = document.querySelectorAll("[data-reveal]");
+
+  if ("IntersectionObserver" in window && !reduceMotion) {
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+    );
+    revealEls.forEach(function (el) { io.observe(el); });
+  } else {
+    // No IntersectionObserver support, or the visitor prefers reduced motion:
+    // show everything immediately instead of animating it in.
+    revealEls.forEach(function (el) { el.classList.add("is-visible"); });
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Hero compatibility gauge — fills shortly after the page loads       */
+  /* ------------------------------------------------------------------ */
+  var heroVisual = document.querySelector(".hero-visual");
+  if (heroVisual) {
+    window.setTimeout(function () {
+      heroVisual.classList.add("is-visible");
+    }, reduceMotion ? 0 : 450);
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Contact form                                                        */
+  /* GitHub Pages has no backend, so this opens a pre-filled email as a  */
+  /* working default. Swap this handler for a Formspree/EmailJS POST     */
+  /* if silent, in-page submission is preferred — see README.md.         */
+  /* ------------------------------------------------------------------ */
+  var form = document.getElementById("contactForm");
+  var status = document.getElementById("formStatus");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      var nombre = form.nombre.value.trim();
+      var email = form.email.value.trim();
+      var telefono = form.telefono.value.trim();
+      var tipo = form.tipo.value;
+      var mensaje = form.mensaje.value.trim();
+      var privacidad = form.privacidad.checked;
+
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!nombre || !email || !privacidad || !emailPattern.test(email)) {
+        status.textContent = "Revisa el nombre, el email y la casilla de privacidad antes de enviar.";
+        status.style.color = "#B5225F";
+        return;
+      }
+
+      var subject = "Contacto propietario — " + nombre;
+      var bodyLines = [
+        "Nombre: " + nombre,
+        "Email: " + email,
+        "Teléfono: " + (telefono || "-"),
+        "Tipo de propiedad: " + tipo,
+        "",
+        "Mensaje:",
+        mensaje || "-"
+      ];
+
+      var mailto =
+        "mailto:info@homiapp.es" +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(bodyLines.join("\n"));
+
+      window.location.href = mailto;
+
+      status.textContent = "Abriendo tu cliente de correo con el mensaje ya redactado...";
+      status.style.color = "#1F8A5F";
+    });
+  }
+})();
+
+</script>
+</body>
+</html>
