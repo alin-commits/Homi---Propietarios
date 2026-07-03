@@ -158,7 +158,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .hero-trust img { opacity: 0.85; }
 
 .hero-visual-wrap { display: flex; flex-direction: column; }
-.hero-visual { position: relative; height: 420px; }
+.hero-visual { position: relative; width: 100%; max-width: 480px; aspect-ratio: 1 / 1; margin: 0 auto; }
 
 .carousel-backdrop {
   position: absolute; inset: 26px 8px 0 40px; border-radius: var(--radius-lg);
@@ -200,7 +200,8 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 /* Slides: cada una es simplemente una imagen que llena el hueco del carrusel */
 .carousel-slide img {
-  width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);
+  width: 100%; height: 100%; object-fit: contain; background: var(--blanco);
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-soft);
 }
 
 /* ==========================================================================
@@ -416,7 +417,6 @@ ul { list-style: none; margin: 0; padding: 0; }
 
 @media (max-width: 980px) {
   .hero-inner { grid-template-columns: 1fr; }
-  .hero-visual { height: 380px; max-width: 440px; margin: 0 auto; width: 100%; }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .cards-grid--3 { grid-template-columns: repeat(2, 1fr); }
   .historia-grid { grid-template-columns: 1fr; gap: 48px; }
@@ -453,6 +453,5 @@ ul { list-style: none; margin: 0; padding: 0; }
   .hero-ctas { flex-direction: column; align-items: stretch; }
   .hero-ctas .btn { width: 100%; }
 
-  .hero-visual { height: 320px; }
   .carousel-arrow { width: 28px; height: 28px; }
 }
