@@ -148,6 +148,11 @@ ul { list-style: none; margin: 0; padding: 0; }
    Hero
    ========================================================================== */
 .hero { padding: 64px 0 100px; overflow: hidden; }
+.hero--simple { padding: 90px 0 80px; }
+.hero-copy--center { max-width: 720px; margin: 0 auto; text-align: center; }
+.hero-copy--center .eyebrow { display: block; }
+.lead--center { margin-left: auto; margin-right: auto; }
+.hero-ctas--center { justify-content: center; }
 .hero-inner { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
 .hero h1 { margin-bottom: 0.45em; }
 .hero h1 span { color: var(--principal); }
@@ -288,6 +293,13 @@ ul { list-style: none; margin: 0; padding: 0; }
   display: grid; grid-template-columns: 1fr 1fr; gap: 30px 48px;
   margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--linea-oscura);
 }
+.benefits-grid--3 { grid-template-columns: repeat(3, 1fr); }
+
+/* Franja mínima de historia — solo 1-2 frases, sin fotos ni hitos */
+.historia-strip { background: var(--oscuro); padding: 28px 0; }
+.historia-strip-inner { max-width: 760px; margin: 0 auto; text-align: center; }
+.historia-strip-inner p { color: rgba(255,255,255,0.75); font-size: 0.95rem; margin: 0; }
+.historia-strip-inner strong { color: var(--blanco); }
 .benefit-item { display: flex; gap: 16px; align-items: flex-start; }
 .benefit-item img { width: 26px; height: 26px; flex-shrink: 0; margin-top: 2px; filter: brightness(0) invert(1); }
 .benefit-item h4 { font-family: var(--font-display); font-size: 1rem; font-weight: 800; color: var(--blanco); margin: 0 0 4px; }
@@ -352,6 +364,38 @@ ul { list-style: none; margin: 0; padding: 0; }
 .contact-card p { margin-bottom: 26px; }
 .contact-card-actions { display: flex; flex-direction: column; gap: 12px; width: 100%; }
 
+.contact-form {
+  background: var(--blanco); border: 1px solid var(--linea); border-radius: var(--radius-lg);
+  padding: 36px; box-shadow: var(--shadow-card);
+}
+.form-row { margin-bottom: 18px; display: flex; flex-direction: column; gap: 6px; }
+.form-row--split { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 0; }
+.form-row--split > div { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
+.contact-form label { font-size: 0.85rem; font-weight: 700; color: var(--ink); }
+.contact-form input, .contact-form select, .contact-form textarea {
+  font-family: var(--font-body); font-size: 0.95rem; padding: 11px 14px;
+  border: 1.5px solid var(--linea); border-radius: 10px; background: var(--fondo); color: var(--ink);
+  transition: border-color 0.15s ease;
+}
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { border-color: var(--principal); outline: none; }
+.contact-form textarea { resize: vertical; min-height: 90px; }
+
+.choice-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.choice-pill {
+  flex: 1; min-width: 150px; display: flex; align-items: center; justify-content: center; gap: 8px;
+  border: 1.5px solid var(--linea); border-radius: 999px; padding: 11px 16px;
+  font-weight: 700; font-size: 0.9rem; color: var(--ink-soft); cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+.choice-pill input { position: absolute; opacity: 0; width: 0; height: 0; }
+.choice-pill:has(input:checked) { border-color: var(--principal); background: var(--principal); color: var(--blanco); }
+.choice-pill:has(input:focus-visible) { outline: 3px solid var(--principal); outline-offset: 2px; }
+
+.checkbox-row { display: flex; align-items: flex-start; gap: 10px; font-size: 0.85rem; font-weight: 500; color: var(--ink-soft); margin-bottom: 22px; }
+.checkbox-row input { width: 17px; height: 17px; margin-top: 2px; accent-color: var(--principal); flex-shrink: 0; }
+.checkbox-row a { color: var(--principal); font-weight: 700; }
+.form-status { text-align: center; font-weight: 700; font-size: 0.88rem; min-height: 1.4em; margin: 12px 0 0; color: var(--principal); }
+
 /* ==========================================================================
    WhatsApp float (verde de WhatsApp — no es un color de marca de HOMI)
    ========================================================================== */
@@ -379,6 +423,7 @@ ul { list-style: none; margin: 0; padding: 0; }
    ========================================================================== */
 .site-footer { background: var(--principal); color: var(--footer-text); padding: 64px 0 0; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 48px; border-bottom: 1px solid rgba(26,26,26,0.15); }
+.footer-brand { display: flex; flex-direction: column; }
 .footer-brand p { color: var(--footer-text); font-size: 0.88rem; margin: 14px 0 16px; }
 .footer-brand img { margin-bottom: 4px; }
 .footer-col h4 { font-family: var(--font-body); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--footer-text); margin-bottom: 16px; }
@@ -419,17 +464,21 @@ ul { list-style: none; margin: 0; padding: 0; }
   .hero-inner { grid-template-columns: 1fr; }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .cards-grid--3 { grid-template-columns: repeat(2, 1fr); }
+  .benefits-grid--3 { grid-template-columns: repeat(2, 1fr); }
   .historia-grid { grid-template-columns: 1fr; gap: 48px; }
   .historia-photos { grid-template-columns: repeat(3, 1fr); gap: 12px; }
   .historia-photos img { height: 130px; }
   .press-grid { grid-template-columns: repeat(2, 1fr); }
   .benefits-grid { grid-template-columns: 1fr; gap: 24px; }
+  .benefits-grid--3 { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 760px) {
   .section { padding: 68px 0; }
+  .hero-ctas { flex-direction: column; align-items: stretch; }
+  .hero-ctas .btn { width: 100%; }
   .steps { grid-template-columns: 1fr; }
   .cards-grid--3 { grid-template-columns: 1fr; }
   .historia-photos { grid-template-columns: 1fr; }
@@ -439,6 +488,10 @@ ul { list-style: none; margin: 0; padding: 0; }
   .benefits-panel-foot { flex-direction: column; align-items: stretch; }
   .benefits-panel-foot .btn { width: 100%; }
   .contact-card { padding: 32px 24px; }
+  .contact-form { padding: 24px; }
+  .form-row--split { grid-template-columns: 1fr; }
+  .contact-form input, .contact-form select, .contact-form textarea { font-size: 16px; }
+  .choice-pill { min-width: 0; }
   .footer-grid { grid-template-columns: 1fr; text-align: center; gap: 32px; }
   .footer-brand, .footer-col { align-items: center; }
   .social-row { justify-content: center; }
